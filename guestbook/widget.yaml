@@ -4,4 +4,4 @@ metadata:
   name: my-widget
 spec:
   size: large
-  color: red
+  color: yellow
