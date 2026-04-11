@@ -1,0 +1,7 @@
+apiVersion: test.example.com/v1
+kind: Dashboard
+metadata:
+  name: my-dashboard
+spec:
+  size: large
+  color: yellow
