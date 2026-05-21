@@ -1,0 +1,7 @@
+apiVersion: demo.example.com/v1
+kind: Widget
+metadata:
+  name: my-widget-1
+spec:
+  size: large
+  color: yellow
