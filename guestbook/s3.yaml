@@ -1,7 +1,11 @@
 apiVersion: s3.services.k8s.aws/v1alpha1
 kind: Bucket
 metadata:
-  name: my-ack-demo-bucket
+  name: my-ack-demo-bucket-3
   namespace: default
+  annotations:
+    services.k8s.aws/adoption-policy: adopt
+    services.k8s.aws/adoption-fields: |
+      {"name":"philljie-eagle-ct-testing"}
 spec:
   name: philljie-eagle-ct-testing
