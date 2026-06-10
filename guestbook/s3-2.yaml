@@ -1,7 +1,0 @@
-apiVersion: s3.services.k8s.aws/v1alpha1
-kind: Bucket
-metadata:
-  name: my-ack-demo-bucket-2
-  namespace: default
-spec:
-  name: philljie-eagle-ct-testing
