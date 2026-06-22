@@ -19,7 +19,7 @@ spec:
         metadata:
           name: ${schema.spec.name}
         spec:
-          replicas: ${schema.spec.replicasBAD}
+          replicas: ${schema.spec.replicas}
           selector:
             matchLabels:
               app: ${schema.spec.name}
