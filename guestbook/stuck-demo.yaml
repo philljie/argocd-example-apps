@@ -1,0 +1,6 @@
+apiVersion: demo.kro.run/v1alpha1
+kind: StuckDemo
+metadata:
+  name: example
+spec:
+  name: example
