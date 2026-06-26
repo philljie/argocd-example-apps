@@ -31,6 +31,3 @@ spec:
               containers:
               - name: app
                 image: does-not-exist.invalid/nginx:latest
-
-      readyWhen:
-        - ${deployment.status.availableReplicas == 0}
