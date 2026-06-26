@@ -17,7 +17,7 @@ spec:
         apiVersion: apps/v1
         kind: Deployment
         metadata:
-          name: ${schema.spec.name3}
+          name: ${schema.spec.name}
         spec:
           replicas: 1
           selector:
@@ -33,4 +33,4 @@ spec:
                 image: does-not-exist.invalid/nginx:latest
 
       readyWhen:
-        - ${deployment.status.availableReplicas == 1}
+        - ${deployment.status.availableReplicas == 0}
