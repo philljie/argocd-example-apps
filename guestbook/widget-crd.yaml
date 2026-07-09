@@ -26,3 +26,11 @@ spec:
                   type: string
                 color:
                   type: string
+---
+apiVersion: demo.example.com/v1
+kind: Widget
+metadata:
+  name: my-widget
+spec:
+  size: large
+  color: yellow
