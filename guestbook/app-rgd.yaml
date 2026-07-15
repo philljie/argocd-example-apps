@@ -19,7 +19,7 @@ spec:
         metadata:
           name: ${schema.spec.name}
         spec:
-          replicas: ${schema.spec.replicas}
+          replicas: ${schema.spec.replicasNotExists}
           selector:
             matchLabels:
               app: ${schema.spec.name}
