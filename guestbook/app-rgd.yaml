@@ -9,7 +9,7 @@ spec:
     spec:
       name: string
       image: string | default="nginx:latest"
-      replicas: integer | default=3
+      replicas: integer | default=4
 
   resources:
     - id: deployment
