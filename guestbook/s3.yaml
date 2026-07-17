@@ -1,0 +1,6 @@
+apiVersion: s3.services.k8s.aws/v1alpha1
+kind: Bucket
+metadata:
+  name: my-bucket
+spec:
+  name: my-philljie-unique-bucket-name-123456789
