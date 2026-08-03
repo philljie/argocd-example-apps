@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+# helmCharts requires `kustomize build --enable-helm`. This lets us prove the
+# customer-set kustomize.buildOptions "--enable-helm" flag survives the allowlist filter
+# and is actually applied by the repo-server: if it is, this renders; if not, build fails.
+helmCharts:
+  - name: podinfo
+    repo: https://stefanprodan.github.io/podinfo
+    version: 6.7.1
+    releaseName: cmtest-podinfo
+    namespace: cmtest

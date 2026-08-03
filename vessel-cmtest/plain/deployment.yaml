@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cmtest-nginx
+  labels:
+    app: cmtest-nginx
+    team: finance
+    environment: production
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cmtest-nginx
+  template:
+    metadata:
+      labels:
+        app: cmtest-nginx
+    spec:
+      containers:
+        - name: nginx
+          image: public.ecr.aws/nginx/nginx:1.27
+          ports:
+            - containerPort: 80

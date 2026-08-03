@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cmtest-config
+  labels:
+    team: finance
+    environment: production
+    tier: backend
+data:
+  key1: value1
