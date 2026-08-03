@@ -1,0 +1,4 @@
+apiVersion: v2
+name: cmtest-helm
+description: minimal chart to test helm.enable toggle
+version: 0.1.0
